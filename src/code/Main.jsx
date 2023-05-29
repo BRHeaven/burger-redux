@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import '../css/burger.css';
+import { quantityChange } from '../redux/Actions/mainActions';
 function Main(props) {
     const renderSelectBurger = () => {
         return props.burger.hamburger.map((object, index) => {
@@ -9,9 +10,9 @@ function Main(props) {
                     <td>{object.name}</td>
                     <td>
                         <div>
-                            <button onClick={()=>{}} className='reduce'>-</button>
+                            <button onClick={()=>{props.quantityChange(object,false)}} className='reduce'>-</button>
                             <p>{object.quantity}</p>
-                            <button onClick={()=>{}} className='increase'>+</button>
+                            <button onClick={()=>{props.quantityChange(object,true)}} className='increase'>+</button>
                         </div>
                     </td>
                     <td>{object.price}</td>
@@ -19,6 +20,9 @@ function Main(props) {
                 </tr>
             );
         });
+    };
+    const renderBurger = () => {
+        
     };
     const money = (quantity, price) => {
         return price * quantity;
@@ -34,6 +38,7 @@ function Main(props) {
     <div className='main'>
         <div className="display">
             <div className="bread breadTop"></div>
+            {renderBurger()}
             <div className="bread breadBottom"></div>
         </div>
         <div className="customBurger">
@@ -63,12 +68,14 @@ function Main(props) {
 };
 const mapStateToProps = state => {
     return {
-        burger : state.dataReducer
+        burger : state.dataReducer,
     };
 };
 const mapDispatchToProps = (dispatch) => {
     return {
-        
+        quantityChange : (object, flag) => {
+            dispatch(quantityChange(object,flag));
+        }
     };
 };
 export default connect(mapStateToProps,mapDispatchToProps)(Main);
