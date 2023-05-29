@@ -1,0 +1,102 @@
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    margin: 0 auto;
+    .customBurger {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        margin: 0 auto;
+        table {
+            thead {
+                tr {
+                    th {
+                        font-size: 2em;
+                        font-weight: bolder;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding: 10px;
+                        border: 1px solid $color-gray-900;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        text-align: center;
+                        text-transform: capitalize;
+                        border: 1px solid $color-gray-900;
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 30px;
+                                height: 30px;
+                                border: 1px solid $color-transparent;
+                                border-radius: 50%;
+                                margin: 3px 5px;
+                                transition: all .4s;
+                                &.reduce {
+                                    color: $color-white;
+                                    background-color: $color-red-600;
+                                    &:hover {
+                                        color: $color-red-600;
+                                        background-color: $color-white;
+                                        border: 1px solid $color-red-600;
+                                    }
+                                }
+                                &.increase {
+                                    color: $color-white;
+                                    background-color: $color-green-600;
+                                    &:hover {
+                                        color: $color-green-600;
+                                        background-color: $color-white;
+                                        border: 1px solid $color-green-600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            tfoot {
+                tr {
+                    th {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        text-align: center;
+                        text-transform: capitalize;
+                        border: 1px solid $color-gray-900;
+                    }
+                }
+            }
+        }
+        .payment {
+            margin: 10px 0;
+            font-size: 1.8em;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-white;
+            background-color: $color-red-a400;
+            border: 2px solid $color-transparent;
+            transition: all .4s;
+            &:hover {
+                color: $color-red-a400;
+                background-color: $color-white;
+                border: 2px solid $color-red-a400;
+            }
+        }
+    }
+}

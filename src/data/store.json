@@ -1,0 +1,3 @@
+{
+    "burger": [{"name":"salad", "price":10,"quantity":0},{"name":"cheese","price":20,"quantity":0},{"name":"beef","price":55,"quantity":0}]
+}

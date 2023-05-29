@@ -1,0 +1,125 @@
+a, p, h1, h2, h3, h4, h5, h6, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  position: unset;
+  flex-wrap: nowrap;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto;
+}
+.main .customBurger {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 80%;
+  margin: 0 auto;
+}
+.main .customBurger table thead tr th {
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #212121;
+}
+.main .customBurger table tbody tr td {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #212121;
+}
+.main .customBurger table tbody tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .customBurger table tbody tr td div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  margin: 3px 5px;
+  transition: all 0.4s;
+}
+.main .customBurger table tbody tr td div button.reduce {
+  color: #FFFFFF;
+  background-color: #E53935;
+}
+.main .customBurger table tbody tr td div button.reduce:hover {
+  color: #E53935;
+  background-color: #FFFFFF;
+  border: 1px solid #E53935;
+}
+.main .customBurger table tbody tr td div button.increase {
+  color: #FFFFFF;
+  background-color: #43A047;
+}
+.main .customBurger table tbody tr td div button.increase:hover {
+  color: #43A047;
+  background-color: #FFFFFF;
+  border: 1px solid #43A047;
+}
+.main .customBurger table tfoot tr th {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #212121;
+}
+.main .customBurger .payment {
+  margin: 10px 0;
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #FF1744;
+  border: 2px solid transparent;
+  transition: all 0.4s;
+}
+.main .customBurger .payment:hover {
+  color: #FF1744;
+  background-color: #FFFFFF;
+  border: 2px solid #FF1744;
+}
+
+.App {
+  position: relative;
+}/*# sourceMappingURL=main.css.map */

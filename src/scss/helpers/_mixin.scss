@@ -1,0 +1,22 @@
+@mixin styleTextDeflaut() {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+@mixin styleText($font-size, $font-weight, $text-transform, $text-align, $letter-spacing) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-transform: $text-transform;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin colorText($color , $background-color, $border-px, $border-color, $border-radius) {
+    color: $color;
+    background-color: $background-color;
+    border: $border-px solid $border-color;
+    border-radius: $border-radius;
+}
