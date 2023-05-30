@@ -22,7 +22,17 @@ function Main(props) {
         });
     };
     const renderBurger = () => {
-        
+        console.log(props.burger.hamburger);
+        let render = [];
+        props.burger.hamburger.map((object , index) => {
+            for ( let i = 0; i < object.quantity; i++ ) {
+                render.push(object.name);
+            };
+            return true;
+        });
+        return render.map((object, index) => {
+            return <div className={object} key={index}></div>
+        });
     };
     const money = (quantity, price) => {
         return price * quantity;
@@ -37,9 +47,11 @@ function Main(props) {
   return (
     <div className='main'>
         <div className="display">
-            <div className="bread breadTop"></div>
-            {renderBurger()}
-            <div className="bread breadBottom"></div>
+            <div className='content'>
+                <div className="bread breadTop"></div>
+                {renderBurger()}
+                <div className="bread breadBottom"></div>
+            </div>
         </div>
         <div className="customBurger">
             <table>

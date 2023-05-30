@@ -41,10 +41,21 @@ ul {
   width: 100%;
   margin: 0 auto;
 }
+.main .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .display .content {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
 .main .customBurger {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 80%;
+  height: 500px;
   margin: 0 auto;
 }
 .main .customBurger table thead tr th {
@@ -110,6 +121,7 @@ ul {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  height: 70px;
   background-color: #FF1744;
   border: 2px solid transparent;
   transition: all 0.4s;

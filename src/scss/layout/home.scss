@@ -7,10 +7,21 @@
     grid-template-columns: repeat(2,1fr);
     width: 100%;
     margin: 0 auto;
+    .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
     .customBurger {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         width: 80%;
+        height: 500px;
         margin: 0 auto;
         table {
             thead {
@@ -89,6 +100,7 @@
             text-align: center;
             text-transform: uppercase;
             color: $color-white;
+            height: 70px;
             background-color: $color-red-a400;
             border: 2px solid $color-transparent;
             transition: all .4s;
