@@ -73,7 +73,6 @@ function Main(props) {
                     </tr>
                 </tfoot>
             </table>
-            <button onClick={()=>{}} className='payment'>payment</button>
         </div>
     </div>
   );

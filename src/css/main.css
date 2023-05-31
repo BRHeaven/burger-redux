@@ -48,7 +48,7 @@ ul {
 }
 .main .display .content {
   display: block;
-  width: 400px;
+  width: 600px;
   margin: 0 auto;
 }
 .main .customBurger {
@@ -113,23 +113,6 @@ ul {
   text-align: center;
   text-transform: capitalize;
   border: 1px solid #212121;
-}
-.main .customBurger .payment {
-  margin: 10px 0;
-  font-size: 1.8em;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  height: 70px;
-  background-color: #FF1744;
-  border: 2px solid transparent;
-  transition: all 0.4s;
-}
-.main .customBurger .payment:hover {
-  color: #FF1744;
-  background-color: #FFFFFF;
-  border: 2px solid #FF1744;
 }
 
 .App {
